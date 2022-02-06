@@ -13,8 +13,10 @@ namespace ConsoleApp1
 
             addressBookTable.EditContact(dataTable);
 
-            addressBookTable.DisplayContacts(dataTable);
             addressBookTable.DeleteContact(dataTable);
+            addressBookTable.RetrieveContactByCityOrState(dataTable);
+
+            addressBookTable.DisplayContacts(dataTable);
         }
     }
 }
