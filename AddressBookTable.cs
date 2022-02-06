@@ -94,6 +94,12 @@ namespace ConsoleApp1
                 Console.WriteLine("Contact Does Not Found");
             }
         }
+        public void CheckSizeByCityOrState(DataTable table)
+        {
+            var contacts = table.Rows.Cast<DataRow>().GroupBy(x => x["City"].Equals("Memphis")).Count();
+
+            Console.WriteLine("Size : {0} ", contacts);
+        }
     }
     
 }

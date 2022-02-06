@@ -15,6 +15,7 @@ namespace ConsoleApp1
 
             addressBookTable.DeleteContact(dataTable);
             addressBookTable.RetrieveContactByCityOrState(dataTable);
+            addressBookTable.CheckSizeByCityOrState(dataTable);
 
             addressBookTable.DisplayContacts(dataTable);
         }
