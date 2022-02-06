@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 
 namespace ConsoleApp1
 {
@@ -7,8 +8,12 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             AddressBookTable addressBookTable = new AddressBookTable();
-            DataTable data = addressBookTable.CreateAddressBookDataTable();
-            addressBookTable.DisplayContacts(data);
+
+            DataTable dataTable = addressBookTable.CreateAddressBookDataTable();
+
+            addressBookTable.EditContact(dataTable);
+
+            addressBookTable.DisplayContacts(dataTable);
         }
     }
 }
