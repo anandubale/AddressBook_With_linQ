@@ -7,7 +7,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             AddressBookTable addressBookTable = new AddressBookTable();
-
+            DataTable data = addressBookTable.CreateAddressBookDataTable();
+            addressBookTable.DisplayContacts(data);
         }
     }
 }
