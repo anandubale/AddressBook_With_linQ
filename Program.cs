@@ -14,6 +14,7 @@ namespace ConsoleApp1
             addressBookTable.EditContact(dataTable);
 
             addressBookTable.DisplayContacts(dataTable);
+            addressBookTable.DeleteContact(dataTable);
         }
     }
 }
